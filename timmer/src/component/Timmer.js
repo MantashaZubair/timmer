@@ -9,7 +9,6 @@ const Timmer = () => {
     timmer= setInterval(()=>{
        setSecond(second+1);
        if (second===59){
-           setMinute(minute+1)
            setSecond(0)
        }
      },1000)
@@ -18,9 +17,7 @@ const Timmer = () => {
 
   const increase =()=>{
     const totalSeconds = minute * 60 + second + 10;
-    var newMinute = Math.floor(totalSeconds / 60);
     var newSecond = totalSeconds % 60;
-    setMinute(newMinute);
     setSecond(newSecond);
   }
   const restart = ()=>{
