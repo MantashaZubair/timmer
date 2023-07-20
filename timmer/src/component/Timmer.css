@@ -1,0 +1,36 @@
+.timmer{
+    border-radius: 10px;
+    background-color: aliceblue;
+    height: 60vh;
+    width: 350px;
+}
+h1{
+    color: #085c98;
+    position: absolute;
+    top: 26%;
+    left: 46%;
+}
+.buttoncontainer{
+    
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 7px 15px 7px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        top: 25%;
+        left: 38%; 
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        top: 25%;
+        left: 43%; 
+    }
+  }
